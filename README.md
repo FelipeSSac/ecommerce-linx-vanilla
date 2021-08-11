@@ -1,6 +1,6 @@
 <h1 align="center">Web Design E-commerce Challenge</h1>
 
-[![Web Design E-commerce Challenge]](https://drive.google.com/file/d/1fbFH84JpEMepAYy0IuBjrC4KrLwPP2wx/view "Devs Do Infinito - Front")
+[![Web Design E-commerce Challenge](https://www.linx.com.br/app/uploads/2019/01/logo_fundo-roxo-1.jpg)](https://drive.google.com/file/d/1fbFH84JpEMepAYy0IuBjrC4KrLwPP2wx/view "Devs Do Infinito - Front")
 
 
 ## ✨ Technologies
@@ -32,13 +32,13 @@ Developer by [Linx](https://www.linx.com.br/) using [Figma](https://www.figma.co
 - Download some package manager ([npm](https://nodejs.org/en/download/) or [yarn](https://yarnpkg.com/)), you can also install only the sass, but it takes more steps to do.
 - Open your terminal
 
+### Run to install SASS by npm
 ```bash
-# Run to install SASS by npm
 $ npm install sass
 ```
 Or
+### Run to install SASS by yarn
 ```bash
-# Run to install SASS by yarn
 $ yarn add sass
 ```
 - Then you must use the terminal to convert scss and sass files into css files
