@@ -7,8 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="./css/index.css" rel="stylesheet">
   <link href="./css/global.css" rel="stylesheet">
+  <link href="./css/header.css" rel="stylesheet">
+  <link href="./css/nav-bar.css" rel="stylesheet">
+  <link href="./css/section-tasks.css" rel="stylesheet">
+  <link href="./css/section-register.css" rel="stylesheet">
+  <link href="./css/section-about.css" rel="stylesheet">
+  <link href="./css/footer.css" rel="stylesheet">
 
   <title>Tarefas a fazer</title>
 
@@ -22,7 +27,8 @@
       <h1 class="header--title">Tarefas a fazer</h1>
       <h4 class="header--subtitle">Adicione e complete tarefas para organizar melhor a sua semana. :)</h4>
     </div>
-    <span class="header--gradient"></span> 
+    <span class="header--gradient"></span>
+    <h4 class="header--subtitle-mobile">Adicione e complete tarefas para organizar melhor a sua semana. :)</h4> 
 
   </header>
 
@@ -49,173 +55,229 @@
 
     <section class="sections">
       <div class="section--tasks-container">
-        <article  class="section--tasks-item section--tasks-item--above">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
+        <article class="section--tasks-item section--tasks-item--above task-item-ending">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-              </svg>
-              Alterar prazo
-            </button>
-          </div>
-        </article>
-        <article  class="section--tasks-item section--tasks-item--above">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
           </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        </article>
+        <article class="section--tasks-item section--tasks-item--above">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
               </svg>
-              Alterar prazo
-            </button>
-          </div>
-        </article>
-        <article  class="section--tasks-item section--tasks-item--above">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-              </svg>
-              Alterar prazo
-            </button>
-          </div>
-        </article>
-        <article  class="section--tasks-item section--tasks-item--above">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-              </svg>
-              Alterar prazo
-            </button>
-          </div>
-        </article>
-        <article  class="section--tasks-item">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-  </svg>
-              Alterar prazo
-            </button>
           </div>
         </article>
-        <article  class="section--tasks-item">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
+        <article class="section--tasks-item section--tasks-item--above">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-              </svg>
-              Alterar prazo
-            </button>
-          </div>
-        </article>
-        <article  class="section--tasks-item">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description" class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
-            <div>
-              <h4 class="section--tasks-deadline">Prazo:</h4>
-              <h2 class="section--tasks-deadline-value">00/00</h2>
-              <small class="section--tasks-deadline-date">Atraso: 3 dias</small>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
             </div>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
-              </svg>
-              Alterar prazo
-            </button>
           </div>
         </article>
-        <article  class="section--tasks-item">
-          <div class="section--tasks-div-attr">
-            <img src="./images/task.png" alt="task">
-            <h3 class="section--tasks-title">Nome da tarefa</h3>
-            <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
-            <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
-          </div>
-          <div class="section--tasks-div-buttons">
-            <button class="section--tasks-button button-conclude">Concluir</button>
-            <button class="section--tasks-button button-alter-date">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <article class="section--tasks-item section--tasks-item--above">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
               </svg>
-              Alterar prazo
-            </button>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
+            </div>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="section--tasks-item">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
+            </div>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="section--tasks-item">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
+            </div>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="section--tasks-item task-item-late">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
+              <div class="task-deadline-container">
+                <h4 class="section--tasks-deadline">Prazo:</h4>
+                <h2 class="section--tasks-deadline-value">00/00</h2>
+                <small class="section--tasks-deadline-date">Atraso: 3 dias</small>
+              </div>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
+            </div>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="section--tasks-item">
+          <div class="section--tasks-item-container">
+            <div class="section--tasks-div-attr">
+              <img class="section--tasks-image" src="./images/task.png" alt="task">
+              <h3 class="section--tasks-title">Nome da tarefa</h3>
+              <svg class="section--tasks-clock" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+              </svg>
+              <dd class="section--tasks-description">Descrição da tarefa, o que deve ser feito.</dd>
+              <button type="button" class="section--tasks-conclude-button-mobile">Concluir</button>
+              <small class="section--tasks-inclusion">Data de inclusão: há 2 semanas</small>
+            </div>
+            <div class="section--tasks-div-buttons">
+              <button class="section--tasks-button button-conclude">Concluir</button>
+              <button class="section--tasks-button button-alter-date">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18.3051C14.5868 18.3051 18.3051 14.5868 18.3051 10C18.3051 5.41323 14.5868 1.69492 10 1.69492C5.41323 1.69492 1.69492 5.41323 1.69492 10C1.69492 14.5868 5.41323 18.3051 10 18.3051ZM10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.8983 4.82345H10.2542V10.4167H15V11.7726H8.8983V4.82345Z" fill="white"/>
+                </svg>
+                Alterar prazo
+              </button>
+            </div>
           </div>
         </article>
       </div>

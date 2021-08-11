@@ -1,0 +1,266 @@
+.section--tasks-container {
+  width: 1081px;
+  margin-top: 71px;
+  display: grid;
+  grid-template-columns: 253px 253px 253px 253px;
+  grid-column-gap: 23px;
+  grid-template-rows: 360px 360px;
+  grid-row-gap: 35px;
+}
+
+.section--tasks-item {
+  width: 253px;
+  height: 360px;
+}
+
+.task-item-ending {
+  position: relative;
+  top: -29px;
+}
+.task-item-ending::before {
+  width: 102px;
+  height: 29px;
+  content: "Prazo curto!";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 60px;
+  left: -8px;
+  background: #422755;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.task-item-late {
+  position: relative;
+  top: -29px;
+}
+.task-item-late::before {
+  width: 102px;
+  height: 29px;
+  content: "Atrasado :(";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 60px;
+  left: -8px;
+  background: #F04837;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.section--tasks-item-container {
+  width: 253px;
+  height: 360px;
+  padding: 23px 17px;
+  z-index: 2;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 14px;
+  overflow-x: initial;
+  overflow-y: hidden;
+  transition: height 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.section--tasks-item-container:hover {
+  height: 466px;
+  box-shadow: 0 0 10px #000;
+}
+
+.section--tasks-item--above {
+  z-index: 3;
+}
+
+.section--tasks-div-attr {
+  width: 219px;
+  height: 314px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.section--tasks-div-buttons {
+  width: 100%;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.section--tasks-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.section--tasks-clock {
+  display: none;
+}
+
+.section--tasks-conclude-button-mobile {
+  display: none;
+}
+
+.section--tasks-description {
+  width: 100%;
+  height: 48px;
+  font-size: 12px;
+}
+
+.section--tasks-deadline {
+  display: inline;
+}
+
+.section--tasks-deadline-value {
+  margin-left: 2px;
+  display: inline;
+  font-size: 18px;
+  color: red;
+}
+
+.section--tasks-deadline-date {
+  margin-left: 13px;
+  display: inline;
+  color: #F04837;
+  font-size: 10px;
+}
+
+.section--tasks-inclusion {
+  font-size: 10px;
+}
+
+.section--tasks-button {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-conclude {
+  background: #422755;
+}
+
+.button-alter-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #F04837;
+}
+
+.section--tasks-button-show-more {
+  width: 100%;
+  max-width: 197px;
+  height: 38px;
+  z-index: -1;
+  color: #fff;
+  background: #6E4B87;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (min-width: 806px) and (max-width: 1080px) {
+  .section--tasks-container {
+    width: 805px;
+    grid-template-columns: 253px 253px 253px;
+    grid-column-gap: 23px;
+    grid-template-rows: 360px 360px 360px;
+    grid-row-gap: 35px;
+  }
+}
+@media (min-width: 531px) and (max-width: 805px) {
+  .section--tasks-container {
+    width: 529px;
+    grid-template-columns: 253px 253px;
+    grid-column-gap: 23px;
+    grid-template-rows: 360px 360px 360px;
+    grid-row-gap: 35px;
+  }
+}
+@media (max-width: 530px) {
+  .section--tasks-container {
+    width: 98%;
+    grid-template-columns: 100%;
+    grid-column-gap: 0;
+    grid-template-rows: 210px;
+    grid-row-gap: 24px;
+  }
+
+  .section--tasks-item {
+    width: 100%;
+    height: 210px;
+  }
+
+  .section--tasks-item-container {
+    width: 100%;
+    height: 210px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .section--tasks-div-attr {
+    width: 100%;
+    height: 162px;
+    display: grid;
+    grid-template-columns: 147px 120px 30px;
+    grid-template-rows: 10% 35% 15% 30% 10%;
+    grid-template-areas: "task-image task-title task-clock" "task-image task-description task-description" "task-image task-deadline-container task-deadline-container" "task-image task-conclude-button-mobile task-conclude-button-mobile" "task-image task-inclusion task-inclusion";
+    justify-content: space-between;
+  }
+
+  .section--tasks-image {
+    width: 147px;
+    height: 178px;
+    grid-area: task-image;
+  }
+
+  .section--tasks-title {
+    grid-area: task-title;
+  }
+
+  .section--tasks-clock {
+    display: block;
+    grid-area: task-clock;
+  }
+  .section--tasks-clock path {
+    fill: red;
+  }
+
+  .section--tasks-description {
+    grid-area: task-description;
+    font-size: 11px;
+  }
+
+  .section--tasks-deadline-container {
+    grid-area: task-deadline-container;
+  }
+
+  .section--tasks-conclude-button-mobile {
+    height: 30px;
+    display: block;
+    grid-area: task-conclude-button-mobile;
+    background-color: #fff;
+    border: 1.5px solid #422755;
+    color: #422755;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .section--tasks-inclusion {
+    grid-area: task-inclusion;
+  }
+
+  .section--tasks-div-buttons {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=section-tasks.css.map */
