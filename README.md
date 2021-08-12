@@ -1,6 +1,6 @@
 <h1 align="center">Web Design E-commerce Challenge</h1>
 
-<h1 align="center"><img src="./img/preview.gif" /></h1>
+<h1 align="center"><img src="./images/preview.gif" /></h1>
 
 
 ## ✨ Technologies
@@ -12,6 +12,8 @@ This project has been setted with the following technologies:
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## 💻 Project
+
+### You can preview the [project](https://linx-ecommerce-vanilla.vercel.app/)
 
 E-commerce HTML structure based on Figma´s design, using HTML to structure the components, SASS to pre-process the CSS on styling the components and Live Server to preview the project in the browser.
 
