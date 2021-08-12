@@ -63,8 +63,7 @@
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 14px;
-  overflow-x: initial;
-  overflow-y: hidden;
+  overflow: hidden;
   transition: height 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .section--tasks-item-container:hover {
@@ -72,7 +71,35 @@
   box-shadow: 0 0 10px #000;
 }
 
-.section--tasks-item--above {
+.section--tasks-item--1 {
+  z-index: 10;
+}
+
+.section--tasks-item--2 {
+  z-index: 9;
+}
+
+.section--tasks-item--3 {
+  z-index: 8;
+}
+
+.section--tasks-item--4 {
+  z-index: 7;
+}
+
+.section--tasks-item--5 {
+  z-index: 6;
+}
+
+.section--tasks-item--6 {
+  z-index: 5;
+}
+
+.section--tasks-item--7 {
+  z-index: 4;
+}
+
+.section--tasks-item--8 {
   z-index: 3;
 }
 
@@ -160,14 +187,13 @@
   width: 100%;
   max-width: 197px;
   height: 38px;
-  z-index: -1;
   color: #fff;
   background: #6E4B87;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-@media (min-width: 806px) and (max-width: 1080px) {
+@media (min-width: 806px) and (max-width: 1085px) {
   .section--tasks-container {
     width: 805px;
     grid-template-columns: 253px 253px 253px;
@@ -204,6 +230,9 @@
     height: 210px;
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  .section--tasks-item-container:hover {
+    height: 210px;
   }
 
   .section--tasks-div-attr {
@@ -252,6 +281,11 @@
     color: #422755;
     font-weight: bold;
     font-size: 16px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  .section--tasks-conclude-button-mobile:hover {
+    background-color: #422755;
+    color: #fff;
   }
 
   .section--tasks-inclusion {

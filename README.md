@@ -1,6 +1,6 @@
 <h1 align="center">Web Design E-commerce Challenge</h1>
 
-[![Web Design E-commerce Challenge](https://www.linx.com.br/app/uploads/2019/01/logo_fundo-roxo-1.jpg)](https://drive.google.com/file/d/1fbFH84JpEMepAYy0IuBjrC4KrLwPP2wx/view "Devs Do Infinito - Front")
+<h1 align="center"><img src="./img/preview.gif" /></h1>
 
 
 ## ✨ Technologies
@@ -13,7 +13,9 @@ This project has been setted with the following technologies:
 
 ## 💻 Project
 
-E-commerce HTML structure based on Figma`s design, using HTML to structure the components, SASS to pre-process the CSS on styling the components and Live Server to preview the project in the browser.
+E-commerce HTML structure based on Figma´s design, using HTML to structure the components, SASS to pre-process the CSS on styling the components and Live Server to preview the project in the browser.
+
+By using the class "task-item-ending" or "task-item-late" in the articles from section tasks, you can respectively add the "Prazo curto!" and "Atrasado!" tag.
 
 ## 🎨 Design
 
@@ -27,7 +29,7 @@ Developer by [Linx](https://www.linx.com.br/) using [Figma](https://www.figma.co
  - Right click on `index.html` file.
  - `Open with` and select your favorite browser.
 
-## 💄 How to edit the SASS files
+## 💄 How to edit SASS files
 
 - Download some package manager ([npm](https://nodejs.org/en/download/) or [yarn](https://yarnpkg.com/)), you can also install only the sass, but it takes more steps to do.
 - Open your terminal
@@ -45,5 +47,5 @@ $ yarn add sass
 
 ```bash
 # Run to convert files
-$ sass (folder with sass or scss files):(folder for the converted css files)
+$ sass <folder with sass or scss files>:<folder for the converted css files>
 ```

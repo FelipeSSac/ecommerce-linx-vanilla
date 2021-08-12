@@ -17,7 +17,7 @@ button {
   cursor: pointer;
   transition: filter 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-button:not(:disabled):hover {
+button:hover {
   filter: brightness(1.3);
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
